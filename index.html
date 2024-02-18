@@ -125,7 +125,7 @@
                         </div>
                     </div>
                     <div>
-                        <button class="btn glass bg-lime-400 bg-opacity-[.2] text-lime-400 font-bold"><img src="./images/seat-green.png" alt=""><span>40</span>seats left</button>
+                        <button class="btn glass bg-lime-400 bg-opacity-[.2] text-lime-400 font-bold"><img src="./images/seat-green.png" alt=""><span id="seat">8</span>seats left</button>
                     </div>
                 </div>
                 <div>
@@ -169,38 +169,68 @@
                     </div> 
                 </div>
                 <div class="grid grid-cols-8 grid-flow-row gap-9 mb-9 mt-9">
-                    <div class="grid grid-cols-subgrid gap-4 col-span-1">A</div> 
-                    <div class="grid grid-cols-subgrid gap-4 col-span-2">A1</div> 
-                    <div class="grid grid-cols-subgrid gap-4 col-span-2">A2</div> 
-                    <div class="grid grid-cols-subgrid gap-4 col-span-2">A3</div> 
-                    <div>A4</div>    
+                    <div class="grid grid-cols-subgrid gap-4 col-span-1 pt-3">A</div> 
+                    <div class="grid grid-cols-subgrid gap-4 col-span-2"><span class="Add"><button onclick="A1()" class="btn" id="A3">A1</button></span></div> 
+                    <div class="grid grid-cols-subgrid gap-4 col-span-2"><span class="Add"><button onclick="A2()" class="btn" id="A2">A2</button></span></div> 
+                    <div class="grid grid-cols-subgrid gap-4 col-span-2"><span class="Add"><button onclick="A3()" class="btn" id="A1">A3</button></span></div> 
+                    <div><span class="Add"><button onclick="A4()" class="btn" id="A4">A4</button></span></div>   
                 </div>
                 <div class="grid grid-cols-8 grid-flow-row gap-9 mb-9">
-                    <div class="grid grid-cols-subgrid gap-4 col-span-1">B</div> 
-                    <div class="grid grid-cols-subgrid gap-4 col-span-2">B1</div> 
-                    <div class="grid grid-cols-subgrid gap-4 col-span-2">B2</div> 
-                    <div class="grid grid-cols-subgrid gap-4 col-span-2">B3</div> 
-                    <div>B4</div>    
+                    <div class="grid grid-cols-subgrid gap-4 col-span-1 pt-3">B</div> 
+                    <div class="grid grid-cols-subgrid gap-4 col-span-2"><span class="Add"><button onclick="A5()" class="btn" id="B1">B1</button></span></div> 
+                    <div class="grid grid-cols-subgrid gap-4 col-span-2"><span class="Add"><button onclick="A6()" class="btn" id="B2">B2</button></span></div> 
+                    <div class="grid grid-cols-subgrid gap-4 col-span-2"><span class="Add"><button onclick="A7()" class="btn" id="B3">B3</button></span></div> 
+                    <div><span class="Add"><button onclick="A8()" class="btn" id="B4">B4</button></span></div>    
                 </div>
             </div>
             <div class=" container mx-auto p-9">
                 <div><h1>Select Your Seat</h1></div>
                 <div class="flex justify-between mt-10">
-                    <h1>Seat</h1>
+                    <h1>Seat<sup class="bg-lime-400 text-white text-lg font-bold rounded-full"><span id="seat2">0</span></sup></h1>
                     <h1>Class</h1>
                     <h1>Price</h1>
                 </div>
-                <div class="flex justify-between border-t-2 border-dashed mt-5">
-                    <h1>C2</h1>
+                <div class="flex justify-between border-t-2 border-dashed mt-5 hidden" id="a1" >
+                    <h1>A1</h1>
                     <h1>Economoy</h1>
                     <h1>550</h1>
                 </div>
-                <div class="flex justify-between border-b-2 mt-5">
-                    <h1>C2</h1>
+                <div class="flex justify-between  mt-5 hidden" id="a2">
+                    <h1>A2</h1>
                     <h1>Economoy</h1>
                     <h1>550</h1>
                 </div>
-                <div class="flex justify-between  mt-5">
+                <div class="flex justify-between  mt-5 hidden" id="a3">
+                    <h1>A3</h1>
+                    <h1>Economoy</h1>
+                    <h1>550</h1>
+                </div>
+                <div class="flex justify-between  mt-5 hidden" id="a4">
+                    <h1>A4</h1>
+                    <h1>Economoy</h1>
+                    <h1>550</h1>
+                </div>
+                <div class="flex justify-between  mt-5 hidden" id="a5">
+                    <h1>B1</h1>
+                    <h1>Economoy</h1>
+                    <h1>550</h1>
+                </div>
+                <div class="flex justify-between  mt-5 hidden" id="a6">
+                    <h1>B2</h1>
+                    <h1>Economoy</h1>
+                    <h1>550</h1>
+                </div>
+                <div class="flex justify-between  mt-5 hidden" id="a7">
+                    <h1>B3</h1>
+                    <h1>Economoy</h1>
+                    <h1>550</h1>
+                </div>
+                <div class="flex justify-between  mt-5 hidden" id="a8">
+                    <h1>B4</h1>
+                    <h1>Economoy</h1>
+                    <h1>550</h1>
+                </div>
+                <div class="flex justify-between  mt-5 ">
                     <h1>Total Price</h1>
                     <h1>BDT 1100</h1>
                 </div>
@@ -254,5 +284,6 @@
             
           </footer>
     </footer>
+    <script src="./js/index.js"></script>
 </body>
 </html>
