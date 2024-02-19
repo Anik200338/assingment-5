@@ -230,39 +230,5 @@ function A8(){
         document.getElementById("grandTotal").innerText = convertedGrandTotalCost2;
     }
 
-// const grandTool = document.getElementById('grandTotal')
-// console.log(grandTool)
-// // total
-// const button = document.getElementById('anik')
-// const text = document.getElementById('userName')
-// const name =document.getElementById ('name')
-// function showName(inputName){
-//     name.innerText = inputName;
-// }
-// button.addEventListener('click', ()=>{
-//     showName(text.value)
-// })
-
-// function handleKeyBoardKeyEvent(event){
-//     const playerPressed = event.key;
-    
-//     if(playerPressed === "1"){
-//         console.log(playerPressed)
-//     }
-
-// }
-
-//  document.addEventListener('keyup',handleKeyBoardKeyEvent);
-
-
-// function calculateTriangleArea(){
-//     const triangleBaseInput = document.getElementById('userName');
-//     const triangleBaseText = triangleBaseInput.value;
-//     const pTotal = convertedGrandTotalCost2 - 500 
-//     console.log(pTotal)
-   
-//     if(triangleBaseText === "New15"){
-//     }
-// }
 
 
