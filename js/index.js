@@ -235,7 +235,6 @@ function A8(){
 
 function applyCouponCode() {
     const couponCodeInput = document.getElementById('userName');
-    const couponCodeSubmit = document.getElementById('couponSubmit');
     const enteredCouponCode = couponCodeInput.value.trim().toUpperCase();
     const grandTotalElement = document.getElementById('grandTotal');
     const currentGrandTotal = parseInt(grandTotalElement.innerText);
@@ -250,14 +249,18 @@ function applyCouponCode() {
     }
 }
 
-function applyDiscount(currentGrandTotal, discountPercentage) {
-
-    const discount = Math.round(currentGrandTotal * discountPercentage);
-    const newGrandTotal = currentGrandTotal - discount;
-    document.getElementById('grandTotal').innerText = newGrandTotal;
-    document.getElementById('userName').disabled = true;
-    document.getElementById('userName').style.display = 'none';
-    document.getElementById('couponSubmit').style.display = 'none';
+function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
 }
+
+document.getElementById('myButton').addEventListener('click', function() {
+    scrollToSection('target-section');
+});
+
+
+
 
 
