@@ -248,6 +248,15 @@ function applyCouponCode() {
         alert('Invalid coupon code. Please enter a valid code.');
     }
 }
+function applyDiscount(currentGrandTotal, discountPercentage) {
+
+    const discount = Math.round(currentGrandTotal * discountPercentage);
+    const newGrandTotal = currentGrandTotal - discount;
+    document.getElementById('grandTotal').innerText = newGrandTotal;
+    document.getElementById('userName').disabled = true;
+    document.getElementById('userName').style.display = 'none';
+    document.getElementById('couponSubmit').style.display = 'none';
+}
 
 function scrollToSection(sectionId) {
     const section = document.getElementById(sectionId);
