@@ -1,0 +1,75 @@
+<style>
+    /* Common styles for both desktop and mobile */
+    .roboto-thin {
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+    }
+
+    /* Styles for larger screens (desktops) */
+    @media only screen and (min-width: 768px) {
+        .navbar {
+            display: flex;
+        }
+
+        .navbar-start, .navbar-center, .navbar-end {
+            flex: 1;
+        }
+
+        .navbar-center {
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar-end {
+            justify-content: flex-end;
+        }
+
+        .navbar-start ul {
+            display: flex;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            display: none;
+            flex-direction: column;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: flex;
+        }
+    }
+
+    /* Styles for smaller screens (mobile devices) */
+    @media only screen and (max-width: 767px) {
+        .navbar {
+            flex-direction: column;
+        }
+
+        .dropdown-content {
+            position: relative;
+            top: 0;
+            left: 0;
+            display: flex;
+        }
+
+        .navbar-start, .navbar-center, .navbar-end {
+            width: 100%;
+            text-align: center;
+        }
+
+        .navbar-center {
+            margin-top: 1rem;
+        }
+
+        .navbar-end {
+            margin-top: 1rem;
+        }
+    }
+</style>

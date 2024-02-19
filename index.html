@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- <link rel="stylesheet" href="style/style.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -234,25 +235,17 @@
                     <h1 id="b8">550</h1>
                 </div>
                 <div class="flex justify-between  mt-5 ">
-                    <h1>Total Price</h1>
-                    <h1>BDT <span id="total">0</span></h1>
+                    <h1 class="text-lg font-bold ">Total Price</h1>
+                    <h1 class="text-lg font-bold ">BDT <span id="total">0</span></h1>
                 </div>
-                <!-- <div class="mt-5" >
-                    <input type="text" placeholder="Type here" class="input input-ghost w-full max-w-xs" id="userName">
-                    <input type="button" value="Submit" class="bg-lime-400 w-24 h-10 rounded-2xl"onclick="calculateTriangleArea()">
-                </div> -->
+                <div class="mt-5" >
+                    <input type="text" placeholder="Have any copupon?" class="input input-ghost w-full max-w-xs border-none rounded-r-none-none" id="userName">
+                    <input type="button" id="couponSubmit" value="Apply" class="bg-lime-400 w-24 h-14 rounded-2xl rounded-l-none"onclick="applyCouponCode()">
+                </div>
                 <div class="flex justify-between  mt-10">
-                    <h1>Grand Total</h1>
-                    <h1>BDT <span id="grandTotal">0</span></h1>
+                    <h1 class="text-lg font-bold ">Grand Total</h1>
+                    <h1 class="text-lg font-bold ">BDT <span id="grandTotal">0</span></h1>
                 </div>
-                <!-- <div class="mt-5">
-                    <label class="form-control w-full max-w-xs">
-                        <div class="label">
-                          <span class="label-text text-xl font-bold">Phone Number*</span>
-                        </div>
-                        <input type="text" placeholder="Enter your phone number" class="input input-bordered w-full max-w-xs" />
-                      </label>
-                </div> -->
                 <div class="mt-10">
                     <!-- Open the modal using ID.showModal() method -->
 <button class="btn btn-block bg-lime-400 " onclick="my_modal_1.showModal()">Next</button>

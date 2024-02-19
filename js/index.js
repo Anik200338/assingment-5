@@ -1,3 +1,4 @@
+// seat color  
 const allBtn2=document.getElementsByClassName('Add');
 let count2 = 0;
 for (const add of allBtn2){
@@ -79,7 +80,7 @@ for (const add of allBtn){
     })
 }
 
-// add append
+// seat section and add seat money
 
 function A1(){
     const a1Seat = document.getElementById('a1')
@@ -230,5 +231,33 @@ function A8(){
         document.getElementById("grandTotal").innerText = convertedGrandTotalCost2;
     }
 
+//  coupon code
+
+function applyCouponCode() {
+    const couponCodeInput = document.getElementById('userName');
+    const couponCodeSubmit = document.getElementById('couponSubmit');
+    const enteredCouponCode = couponCodeInput.value.trim().toUpperCase();
+    const grandTotalElement = document.getElementById('grandTotal');
+    const currentGrandTotal = parseInt(grandTotalElement.innerText);
+
+    if (enteredCouponCode === 'NEW15') {
+        applyDiscount(currentGrandTotal, 0.15);
+    } else if (enteredCouponCode === 'COUPLE 20') {
+        applyDiscount(currentGrandTotal, 0.20);
+    } else {
+
+        alert('Invalid coupon code. Please enter a valid code.');
+    }
+}
+
+function applyDiscount(currentGrandTotal, discountPercentage) {
+
+    const discount = Math.round(currentGrandTotal * discountPercentage);
+    const newGrandTotal = currentGrandTotal - discount;
+    document.getElementById('grandTotal').innerText = newGrandTotal;
+    document.getElementById('userName').disabled = true;
+    document.getElementById('userName').style.display = 'none';
+    document.getElementById('couponSubmit').style.display = 'none';
+}
 
 
