@@ -211,7 +211,6 @@ function A7(){
         return a7Seat.classList.add('hidden');}
     document.getElementById("grandTotal").innerText = convertedGrandTotalCost2;
 }
-const grandTost = document.getElementById("grandTotal").innerText;
 function A8(){
     const a2Seat = document.getElementById('a8')
     a2Seat.classList.remove('hidden')
@@ -222,15 +221,18 @@ function A8(){
     if(convertedTotalCost2 >= 2300){
         alert('no seat')
         return a2Seat.classList.add('hidden');}
-    document.getElementById("total").innerText = convertedTotalCost2;
-    const convertedGrandTotalCost2 = parseInt(grandTost) + convertedTotalCost11
+        document.getElementById("total").innerText = convertedTotalCost2;
+        const grandTost = document.getElementById("grandTotal").innerText;
+    const convertedGrandTotalCost2 = parseInt(grandTost) + convertedTotalCost11;
     if(convertedGrandTotalCost2 >= 2300){
         alert('no seat')
         return a2Seat.classList.add('hidden');}
-    document.getElementById("grandTotal").innerText = convertedGrandTotalCost2;
-    
-}
-// total
+        document.getElementById("grandTotal").innerText = convertedGrandTotalCost2;
+    }
+
+// const grandTool = document.getElementById('grandTotal')
+// console.log(grandTool)
+// // total
 // const button = document.getElementById('anik')
 // const text = document.getElementById('userName')
 // const name =document.getElementById ('name')
@@ -241,15 +243,26 @@ function A8(){
 //     showName(text.value)
 // })
 
-function handleKeyBoardKeyEvent(event){
-    const playerPressed = event.key;
+// function handleKeyBoardKeyEvent(event){
+//     const playerPressed = event.key;
     
-    if(playerPressed === "1"){
-        console.log(playerPressed)
-    }
+//     if(playerPressed === "1"){
+//         console.log(playerPressed)
+//     }
 
-}
+// }
 
- document.addEventListener('keyup',handleKeyBoardKeyEvent);
+//  document.addEventListener('keyup',handleKeyBoardKeyEvent);
+
+
+// function calculateTriangleArea(){
+//     const triangleBaseInput = document.getElementById('userName');
+//     const triangleBaseText = triangleBaseInput.value;
+//     const pTotal = convertedGrandTotalCost2 - 500 
+//     console.log(pTotal)
+   
+//     if(triangleBaseText === "New15"){
+//     }
+// }
 
 
